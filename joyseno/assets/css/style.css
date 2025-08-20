@@ -1,0 +1,254 @@
+.divider {
+    height: 100px;
+    margin: 0 10px;
+}
+
+/* header start */
+header nav ul li {
+    margin-left: 14px;
+
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+header .navbar-nav .nav-link {
+    transition: all 0.5s ease-in-out;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #e6bc29;
+}
+
+/* header end */
+
+/* hero start */
+.hero-img{
+     background-image: url(../images/banner-bg.png);
+}
+
+.bg-img {
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.hero-content {
+    height: 100vh;
+    padding: 0 0 0 100px;
+}
+
+.icon {
+    height: 350px;
+}
+
+.icon ul li a {
+    display: block;
+    font-size: 18px;
+    color: #1d1d1d;
+    margin-top: 10px;
+    background-color: #a9a9a9;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon ul li a:hover {
+    background-color: #ffffff;
+}
+
+.video-play-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 100px 200px;
+
+}
+
+.video-play-button:before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: #e6bc29;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #e6bc29;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+
+.video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    background: #e6bc29;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button span {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+}
+
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+.video-play-button {
+
+    animation: scale-up-center 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+/* hero end */
+
+/* service section start */
+.underline{
+    border-bottom: 4px solid #333;
+}
+
+.service-box {
+    width: 250px;
+    height: 250px;
+    border: 6px solid #e6bc29;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box img {
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+
+.service-box .icon-2 {
+    display: none;
+}
+
+.service-box p {
+    color: #3d3a3a;
+    transition: color 0.5s ease;
+}
+
+.service-box:hover .icon-1 {
+    display: none;
+}
+
+.service-box:hover .icon-2 {
+    display: block;
+}
+
+.service-box:hover p {
+    color: #e6bc29;
+}
+ .btn a{
+    background: #1b1b1b;
+    transition: all 0.4s ease;
+    color: #fff;
+    border-radius: 8px;
+
+}
+
+.btn a:hover{
+    background: #e6bc29 !important;
+}
+/* service section end */
+/* portfolio start */
+.overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: 
+    rgba(37, 36, 36, 0.5);
+    transition: 0.5s;
+    margin: 0px auto;
+}
+.portfolio-img:hover .overlay {
+    opacity: 1;
+}
+/* blog start */
+.my-blog {
+    margin-bottom: 200px;
+}
+.blog-card{
+    padding: 100px 0;
+}
+/* blog end */
+/* portfolio end */
+/* contact sec start */
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.sec-button{
+    background: #fa7e23;
+    padding: .7rem  4rem!important;
+    
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+.sec-button:hover {
+    background: #2c2c2b !important;
+}
+/* contact sec end */
+/* footer start */
+.footer-icon ul li a{
+    color: #fff;
+    padding: 18px 20px;
+    background-color: #201f1f;
+    margin-left: 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+.footer-icon ul li a:hover{
+    background-color: #fff;
+    color: #201f1f;
+}
+.footer-icon p a{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.footer-icon p a:hover{
+    color: #e6bc29;
+}
+/* footer end */
